@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Website</title>
+    <!-- ICONSCOUNT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Google Fonts (Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+    <!-- swiper js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./style.css" class="css">
+
+    
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>EDUCATOR</h4></a>
+            <ul class = "nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <!-- ===========================================================================END OF NAVBAR======================================================================================== -->
+
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Grow your skills to advance your carrer path</h1>
+                <p>with the help of E-Learning, create your own path and drive on your skills on your own to achieve what you seek</p>
+                <a href="courses.html" class="btn btn-primary" style="color:white">Get Started</a>
+            </div>
+
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="https://img.freepik.com/free-vector/set-graduation-students_1262-19896.jpg?w=2000" >
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =======================================================END OF HEADER============================================================================================================== -->
+
+
+
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Categories</h1>
+                <p>
+                    Designed for both students and working professionals to crack their dream Software Engineering Roles at Top Product Based Companies.
+                </p>
+                <a href="#" class="btn" style="color: black;">Learn More</a>
+            </div>
+
+            <div class="categories__right">
+                <article class="category">
+                    <!-- <span class="category__icon"><img style="height: 50px; width: 50px;" src="data:image/png;base64,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"></i></span> -->
+                    <h5 style="font-size: 20px;">Data Structure and Algorithm</h5>
+                    <p>Data structure and Algorithm (DSA) is applied in all disciplines of software development.</p>
+                </article>
+
+                <article class="category">
+                    <!-- <span class="category__icon"><i class="uil uil-palette"></i></span> -->
+                    <h5 style="font-size: 20px;"> Web Development</h5>
+                    <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
+                </article>
+
+                <article class="category">
+                    <!-- <span class="category__icon"><i class="uil uil-usd-circle"></i></span> -->
+                    <h5 style="font-size: 20px;">App Development</h5>
+                    <p>Mobile application development is the process to making software for smartphones and digital assistants, most commonly for Android and iOS.</p>
+                </article>
+
+                <article class="category">
+                    <!-- <span class="category__icon"><i class="uil uil-megaphone"></i></span> -->
+                    <h5 style="font-size: 20px;">Machine Learning</h5>
+                    <p>Machine learning is a modern innovation that has enhanced many industrial and professional processes as well as our daily lives.</p>
+                </article>
+
+                <article class="category">
+                    <!-- <span class="category__icon"><i class="uil uil-music"></i></span> -->
+                    <h5 style="font-size: 20px;">Artificial Intelligence</h5>
+                    <p>Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems.</p>
+                </article>
+
+                <article class="category">
+                    <!-- <span class="category__icon"><i class="uil uil-puzzle-piece"></i></span> -->
+                    <h5 style="font-size: 20px;">Programming Language</h5>
+                    <p>Introduction: A programming language is a set of instructions and syntax used to create software programs. </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ========================================================END OF CATEGORIES ====================================================== -->
+
+
+
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course__image">
+                    <img style="height: 214px;" src="https://media2.dev.to/dynamic/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2nce40jcietkify5lm7k.jpg">
+                </div>
+                <div class="course__info">
+                <h4>Data Structure and Algorithm</h4>
+                <p>We provide best DSA content and also suggest good coding problem related to the topic provided by us.</p>
+                <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="https://i.ytimg.com/vi/lA-fXj2fD1s/maxresdefault.jpg">
+                </div>
+                <div class="course__info">
+                <h4>Web development</h4>
+                <p>In this course we will teach you basic to advance lavel Website designe and also teach you javascript and react.js.</p>
+                <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg">
+                </div>
+                <div class="course__info">
+                <h4>App Development</h4>
+                <p>Mobile App Development course is gaining importance in today’s digital era. Due to the increasing popularity of technology and everything getting digitised, the Mobile App Development course is winning attention.</p>
+                <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+<!-- ========================================================END OF courses ====================================================== -->
+
+
+
+
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What is online learning like?</h4>
+                    <p>
+                        For those who have never encountered online learning, the biggest question is often what it is actually like. The caveat, as you know, is that online learning comes in several forms. 
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Can I learn at my own pace?</h4>
+                    <p>
+                        This is another common question that people have about online courses. There are usually self-paced programs and traditional classroom  programs available. 
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Are you  licensed by educational organizations?</h4>
+                    <p>
+                        There isn’t always a need for licensing or accreditation for online courses. However, some programs do require it. Either way, people will usually ask what type of training or background you have, as well as any licensing that’s available if that’s relevant.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Does online learning really work?</h4>
+                    <p>
+                        There’s always a skeptic, and when it comes to online learning, there are often several of them. Everyone wants to know if online courses “really work”—and that’s a hard question to answer because there are several factors to consider. On a general basis, yes, online learning can be effective. 
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What types of assignments do you give?</h4>
+                    <p>
+                        Like knowing the format of online learning, people often want to know the type of work they’ll be doing when they take online courses. Be sure to provide a glimpse of what you offer here and link to previous projects or assignments if you can.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What are the technology requirements?</h4>
+                    <p>
+                        In the same vein, people need to know whether their computers are up to snuff. You’ll want to explain all the software that you use and what kind of technology people need to take your online courses. If there are certain programs or applications used, put those here.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How long does each course take?</h4>
+                    <p>
+                        Some online courses are just a few hours long, while others last a few months. Depending on the type of online learning that you offer, your courses may have their own variable lengths. 
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How much do courses cost?</h4>
+                    <p>
+                        Even when it comes to education and training, people want to be careful with their money. Some people are on a tight budget. Others just want to be mindful of what they spend. Either way, everyone is going to want to know how much online courses are going to cost. 
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Why should I use online learning?</h4>
+                    <p>
+                        Here’s an example of the use of “why” instead of offering a yes/no question. People will wonder what online learning can do for them and rather than telling them whether or not they can benefit, you’re explaining how everyone can benefit from online learning when they do it properly.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>what is the process to register on your website?</h4>
+                    <p>
+                        People will want to know how to get started. You can link them to the pages on your website that help them through that process, but you’ll also want to take the time to explain it to them here.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ========================================================END OF FAQ's ====================================================== -->
+
+
+
+        <section class="container testimonials__container mySwiper">
+            <h2>Students' Testimonials</h2>
+            <div class="swiper-wrapper">
+                <article class="testimonial swiper-slide">
+                    <div class="avatar" >
+                        <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Images-HD.png">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Adeeba Fatima</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            "My experience at Educator is great and memorable. The mentors at Educator helped us enhance my academic and interpersonal skills. I am thankful to Educator. 
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Nitin Jangir</h5>
+                        <small>Web Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            Educator and its faculties have put in all the efforts to groom us and make us corporate professionals. It was a wonderful experience at Educator.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-No-Background.png">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Tanveer Ahmad</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            
+                            Educator is great place to learn.It gives me great to say with pride that i have preparing for my placement in itsector from this platform and thankful to its Educator.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Sanchit Bhatnagar</h5>
+                        <small>Student</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            
+                            Great experience from Educator. You get a lot of opportunities. Work hard to get it. Be prepared for everything. Maintain your consistency to grab a good job in MNc.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Free-Image.png">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Abhimanyu Sharma</h5>
+                        <small>Designer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            My placement preparation at Educator  consisted of many projects based evaluation and faculty connect. The mentors at Educator helped us enhance interpersonal skills. 
+                        </p>
+                    </div>
+                </article>               
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+<!-- ========================================================END OF TESTIMONIALS ====================================================== -->
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__1">
+                    <a href="index.html" class="footer__logo"><h4>EDUCATOR</h4></a>
+                    <p>
+                        Educator is the one of the best teaching website across all the teaching website which is currently present in India.
+                    </p>
+                </div>
+
+                 <div class="footer_2">
+                    <h4>Permalinks</h4>
+                    <ul class="permalinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                 </div>
+
+                 <div class="footer_3">
+                    <h4>Privacy</h4>
+                    <ul class="privacy">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#"></a>Terms and Condition</li>
+                        <li><a href="#"></a>Refund Policy</li>
+                    </ul>
+                 </div>
+                 <div class="footer__4">
+                    <h4>Contact Us</h4>
+                    <div>
+                        <p>+91 8210632703</p>
+                        <p>educator123@gmail.com</p>
+                    </div>
+                    <ul class="footer__Socials">
+                        <li>
+                            <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="uil uil-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                        </li>
+                    </ul>
+                 </div>
+                </div>
+                <div class="footer__copyright">
+                   <small>Copyright &copy; EDUCATOR</small>   
+                </div>
+        </footer>
+
+
+        <!-- ========================================================END OF FOOTERS ====================================================== -->
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./main.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                //when window width is >=600px
+                //   breakpoints:{
+                    //     600:{
+                        //         slidesPerView:2;
+                        //     }
+                        //   }
+                    });
+        </script>
+          
+          
+    </body>
+</html>
